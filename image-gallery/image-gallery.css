@@ -21,13 +21,13 @@ p {
     margin: 0 0 20px 0;
 }
 
+/* Overlay */
+
 .close {
     background: none;
     color: white;
     border: 0;
 }
-
-.gallery {}
 
 .overlay {
     position: fixed;
@@ -52,4 +52,41 @@ p {
 
 .overlay img {
     width: 100%;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.item.col2 {
+    grid-column: span 2;
+}
+
+.item.col3 {
+    grid-column: span 3;
+}
+
+.item.col4 {
+    grid-column: span 4;
+}
+
+.item.row2 {
+    grid-row: span 2;
+}
+
+.item.row3 {
+    grid-row: span 3;
+}
+
+.item.row4 {
+    grid-row: span 4;
 }
