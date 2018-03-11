@@ -65,6 +65,7 @@ p {
 
 .item {
     overflow: hidden;
+    display: grid;
 }
 
 .item.col2 {
@@ -89,4 +90,37 @@ p {
 
 .item.row4 {
     grid-row: span 4;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item img,
+.item__overlay {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.item__overlay {
+    background: #ffc60040;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transform: translateY(100%);
+    transition: .5s;
+}
+
+.item__overlay button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.item:hover .item__overlay {
+    transform: translateY(0);
 }
