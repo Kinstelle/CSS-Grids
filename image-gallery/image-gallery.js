@@ -29,5 +29,26 @@ for(j = 0; j < (imageNb); j++) {
 }
 
 // generate gallery items (col, row, image) and put them in the html structure
-const html = digits.map(generateHTML).join('');
+var html = digits.map(generateHTML).join('');
 gallery.innerHTML = html;
+
+// get all gallery items
+var items = document.querySelectorAll('.item');
+
+// open modal and display item image in it
+function handleClick(e) {
+    var src = e.currentTarget.querySelector('img').src;
+    overlayImage.src = src;
+    overlay.classList.add('open');
+}
+
+// close modal
+function closeModal() {
+    overlay.classList.remove('open');
+}
+
+// open modal when the item is clicked
+items.forEach(item => item.addEventListener('click', handleClick));
+
+// close modal when the close button is clicked
+overlayClose.addEventListener('click', closeModal);

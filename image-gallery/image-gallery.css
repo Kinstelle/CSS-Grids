@@ -25,7 +25,7 @@ p {
 
 .close {
     background: none;
-    color: white;
+    color:  #000;
     border: 0;
 }
 
@@ -42,9 +42,11 @@ p {
 
 .overlay.open {
     display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
-.overlay figure {
+.overlay-inner {
     background: white;
     width: 700px;
     padding: 20px;
