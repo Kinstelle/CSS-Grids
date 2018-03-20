@@ -3,13 +3,18 @@ body {
 }
 
 button {
-    background: #ffc600;
+    background: var(--yellow);
     border: 0;
     padding: 10px 20px;
 }
 
 img {
     max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
 }
 
 /* Top */
@@ -36,12 +41,12 @@ img {
 
 .hero h1,
 .hero p {
-    background: #ffc600;
+    background: var(--yellow);
     padding: 5px;
 }
 
 .cta {
-    background: #ffc600;
+    background: var(--yellow);
     display: grid;
     align-items: center;
     justify-items: center;
@@ -75,15 +80,15 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
-    margin: 20px 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 #menu-list li a {
-    background: #ffc600;
+    background: var(--yellow);
     display: block;
-    color: #000;
+    color: var(--black);
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -108,4 +113,14 @@ img {
 
 .feature .icon {
     font-size: 50px;
+}
+
+/* About */
+
+.about {
+    background: #FFF;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+    padding: 50px;
 }
