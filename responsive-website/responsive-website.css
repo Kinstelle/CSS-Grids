@@ -73,7 +73,7 @@ img {
 
 #menu-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
     margin: 20px 0;
     padding: 0;
@@ -89,4 +89,23 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
+}
+
+/* Features */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.feature {
+    background: #FFF;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #FFF;
+}
+
+.feature .icon {
+    font-size: 50px;
 }
