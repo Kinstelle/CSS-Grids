@@ -28,3 +28,17 @@ h2 {
     font-weight: 100;
     margin: 0;
 }
+
+/* post */
+
+.post {
+    max-width: 992px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px 50px;
+}
+
+.post > * {
+    grid-column: 2 / -2;
+}
