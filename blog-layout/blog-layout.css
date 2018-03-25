@@ -40,5 +40,45 @@ h2 {
 }
 
 .post > * {
-    grid-column: 2 / -2;
+    grid-column: 2 / span 1;
+}
+
+/* figure */
+
+.post figure {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.post figcaption {
+    font-size: 11px;
+}
+
+/* blockquote */
+
+.post blockquote {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* tips */
+
+.tip {
+    background: #FAFAFA;
+    padding: 10px;
+}
+
+.tip-left {
+    grid-column: 1 / span 1;
+    text-align: right;
+    border-right: 2px solid var(--yellow);
+}
+
+.tip-right {
+    grid-column: 3 / span 1;
+    text-align: left;
+    border-left: 2px solid var(--yellow);
 }
